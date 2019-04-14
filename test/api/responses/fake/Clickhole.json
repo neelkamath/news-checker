@@ -1,0 +1,13 @@
+{
+  "request": "I Love My Children, But Not Enough To Make Them Corn On The Cob",
+  "response": {
+    "status": "fake",
+    "isReported": false,
+    "news": {
+      "percentage": 100,
+      "matchedTitle": "I Love My Children, But Not Enough To Make Them Corn On The Cob",
+      "source": "https://www.clickhole.com/i-love-my-children-but-not-enough-to-make-them-corn-on-1828789760"
+    },
+    "relatedNews": []
+  }
+}

@@ -1,0 +1,28 @@
+image: google/dart:2.0.0
+
+services:
+  - postgres:10
+
+variables:
+  POSTGRES_DB: news
+  POSTGRES_USER: runner
+  POSTGRES_PASSWORD: ""
+  DATABASE_URL: postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@postgres:5432/$POSTGRES_DB
+
+test:
+  script:
+    - curl https://cli-assets.heroku.com/install.sh | sh # Reproduce the server's environment (Heroku in this case).
+    - heroku --version # Print for debugging information.
+    - pub get
+    - heroku local test
+
+format:
+  script: bash bin/format.sh
+
+deploy:
+  stage: deploy
+  script:
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME.git
+    - git push -f heroku master
+  only:
+    - master

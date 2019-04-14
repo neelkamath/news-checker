@@ -1,0 +1,14 @@
+{
+  "request": "iPhone XS",
+  "response": {
+    "status": "real",
+    "isReported": false,
+    "news": {
+      "percentage": 50,
+      "matchedTitle": "The iPhone XS Is Forever",
+      "source": "https://gizmodo.com/the-iphone-xs-is-forever-1829305262",
+      "snippet": "I’m sick of buying iPhones. For the past decade, I’ve been buying them and loving them and breaking them and losing them and replacing them and, when September comes along, upgrading them. Last year, it cost me over $1,200 to get an iPhone X, and against my b…"
+    },
+    "relatedNews": []
+  }
+}

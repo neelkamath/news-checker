@@ -1,0 +1,12 @@
+{
+  "request": "Mountain in Wales downgraded to hill",
+  "response": {
+    "status": "faux_satire",
+    "isReported": false,
+    "news": {
+      "percentage": 100,
+      "matchedTitle": "Mountain in Wales downgraded to hill",
+      "source": "https://www.cnn.com/2018/08/18/uk/mountain-becomes-hill-in-wales/index.html"
+    }
+  }
+}
