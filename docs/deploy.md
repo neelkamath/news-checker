@@ -1,5 +1,7 @@
 # Deploying Your Own Instance
 
+This document explains how to deploy the server to Heroku.
+
 # Deploying
 
 ## Prerequisites
@@ -19,4 +21,4 @@
 
 # Usage
 
-You can start the server by running `heroku ps:scale web=<DYNOS>`, where `<DYNOS>` are the number of dynos you want the app to run on (e.g., `1`). 
+You can start the server by running `heroku ps:scale web=<DYNOS> -a <APP_NAME>`, where `<DYNOS>` are the number of dynos you want the app to run on (e.g., `1`), and `<APP_NAME>` is the name of this app. 

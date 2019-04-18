@@ -1,4 +1,6 @@
-# Develop Locally
+# Developing Locally
+
+This document explains how to update this project's code.
 
 # Installation
 

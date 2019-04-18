@@ -1,10 +1,10 @@
 # Installing
 
-## [Develop locally](local.md)
+## [Developing Locally](local.md)
 
-## [Forking the repository](fork.md)
+## [Setting Up the Repository](setup.md)
 
-## [Deploy Your Own Instance](deploy.md)
+## [Deploying Your Own Instance](deploy.md)
 
 # Documentation
 
@@ -31,6 +31,6 @@ Check constraints:
 
 # Notes
 
-- If you've forked the repository, note that the [GitLab CI file](../.gitlab-ci.yml) is set to automatically deploy the app to Heroku for commits on the `master` branch where the CI has passed.
+- If you would like to setup CD for the project's commits to the `master` branch where the CI has passed, uncomment the `deploy` node in the [GitLab CI file](../.gitlab-ci.yml).
 - If the database is to be updated (such as a new table has been created), you can reflect these changes in [db.dart](../lib/components/db.dart).
 - There must be an attribution link to [News API](https://newsapi.org) (this project already has one). 

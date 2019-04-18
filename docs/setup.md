@@ -1,4 +1,6 @@
-# Forking the Repository
+# Setting Up the Repository
+
+This document explains how to setup this project's repository, or a fork of it.
 
 1. Get a [News API key](https://newsapi.org/register).
 1. Create a [Heroku account](https://signup.heroku.com).

@@ -19,10 +19,10 @@ test:
 format:
   script: bash bin/format.sh
 
-deploy:
-  stage: deploy
-  script:
-    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME.git
-    - git push -f heroku master
-  only:
-    - master
+# deploy:
+#   stage: deploy
+#   script:
+#     - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME.git
+#     - git push -f heroku master
+#   only:
+#     - master

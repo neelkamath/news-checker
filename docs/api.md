@@ -1,5 +1,7 @@
 # API
 
+This document explains how to use the HTTP API.
+
 # Checking The Type of News
 
 To check what type of news `<NEWS>` (e.g., `I Love My Children, But Not Enough To Make Them Corn On The Cob`) is, you can make a request to `<SERVER>/api/v1/check/<NEWS_ENCODED>`, where `SERVER` is the API server's URL, and `<NEWS_ENCODED>` is `<NEWS>` percent-encoded (e.g., `https://fake-news-checker.herokuapp.com/api/v1/check/I%20Love%20My%20Children%2C%20But%20Not%20Enough%20To%20Make%20Them%20Corn%20On%20The%20Cob`). An example server response is given below.
