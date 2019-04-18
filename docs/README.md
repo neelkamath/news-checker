@@ -8,6 +8,8 @@
 
 # Documentation
 
+## [API](api.md)
+
 ## Server
 
 [Heroku](https://www.heroku.com) is the server used.

@@ -20,47 +20,7 @@ For example, performing a GET request to `https://fake-news-checker.herokuapp.co
 }
 ```
 
-This project has been deprecated for the following reasons:
-1. No one uses it (it's useless).
-1. It's susceptible to bugs. The reason Google, Facebook, etc. still haven't been able to properly combat the problem of fake news is because even humans cannot differentiate between real and fake news. The AI way of doing it would be to analyze the way the article is written, but writing style doesn't necessarily indicate whether news is real or fake. Similarly, the way this app does it is by checking reputable sources. However, even "reputable" sources such as The New York Times constantly takes down articles they write, thereby making even their authenticity questionable.
-
-# Documentation
-
-The HTTP API server's base URL is `https://fake-news-checker.herokuapp.com`. This instance isn't running in production, so if you aren't using it for demonstration purposes, it is highly suggested that you deploy your own instance. If you would like to deploy your own instance or develop the project, read [these docs](docs/README.md). Below is the documentation for the HTTP API's endpoints.
-
-### Checking The Type of News
-
-To check what type of news `I Love My Children, But Not Enough To Make Them Corn On The Cob` is, you can make a request to `https://fake-news-checker.herokuapp.com/api/v1/check/I%20Love%20My%20Children%2C%20But%20Not%20Enough%20To%20Make%20Them%20Corn%20On%20The%20Cob`. The server would respond with:
-```json
-{
-  "status": "real",
-  "isReported": false,
-  "news": {
-    "percentage": 100,
-    "matchedTitle": "I Love My Children, But Not Enough To Make Them Corn On The Cob",
-    "source": "https://www.clickhole.com/i-love-my-children-but-not-enough-to-make-them-corn-on-1828789760",
-    "snippet": "My three children are the greatest joys in my life, and raising them has given me a sense of purpose that I never knew was possible. But at a certain point, you’ve got to draw the line: I love my children, but not enough to make them corn on the cob. Read mor…"
-  },
-  "relatedNews": [
-    {
-      "percentage": 10,
-      "matchedTitle": "JO WOOD, 63, admits she's 'single and ready to mingle' - but men just can't keep up with her",
-      "source": "https://www.dailymail.co.uk/femail/article-6174197/JO-WOOD-63-admits-shes-single-ready-mingle-men-just-her.html",
-      "snippet": "Jo Wood split up with the Rolling Stones' Ronnie Wood after he hooked up with an 18-year-old waitress in 2008. Here, she talks about how she's changed her life and is now looking for love."
-    }
-  ]
-}
-```
-The `status` key can have the values `fake` (fake), `satire` (fake), `faux_satire` (looks fake, but is real), `real` (real), `unsure` (couldn't find a match), and `unavailable` (the services used for matching are currently unavailable).
-The `isReported` key is a boolean stating whether the match came from the DB. If the match came from the DB, it may be incorrect since the data is from user-generated reports.
-
-### Reporting News
-
-You can help improve the database for checking the type of news by reporting news.
-
-Send an HTTP POST request to `https://fake-news-checker.herokuapp.com/api/v1/report`. The `Content-Type: application/json` header should be sent along with a body such as `{"title":"Donald Trump has a brain","type":"faux_satire"}`.
-
-The server will respond with a `204` if the title was reported successfully.
+# [Documentation](docs/README.md)
 
 # License
 

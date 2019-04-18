@@ -5,6 +5,7 @@
 1. Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 1. Create an app: `heroku create <APP_NAME>`, where `<APP_NAME>` is an optionally passed name for your app (a randomly generated one will be generated for you if you do not specify one)
 1. Fork the repository.
+1. Create a [GitLab CI/CD repo](https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html).
 1. In your GitLab project, go to **Settings > CI / CD**.
 1. Click **Expand** on the **Variables** tab.
 1. Enter the News API key.
